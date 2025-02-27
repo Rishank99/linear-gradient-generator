@@ -80,7 +80,7 @@
             <button id="myButton1">#051937</button>
             <button id="myButton2">#008793</button>
         </div>
-        <h2>Copy your code here</h2>
+        <h2>Click below to copy code</h2>
         <div class="copyCode">
             background-image: linear-gradient( to right, rgb(92, 145, 229), rgb(152, 63, 198))
         </div>
@@ -134,6 +134,7 @@
         // 6) To copy the gradient on clicking the copyCode text
         copyDiv.addEventListener("click", ()=>{
             navigator.clipboard.writeText(copyDiv.innerText);
+            alert("Gradient code copied");
         }) 
     </script>
 </body>
